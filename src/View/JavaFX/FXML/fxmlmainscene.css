@@ -1,0 +1,123 @@
+/* 
+    Created on : Dec 1, 2015, 4:23:57 AM
+    Author     : Fabien PHAM
+*/
+
+#AnchorPane
+{
+    -fx-pref-height : 480.0;
+    -fx-pref-width : 600.0;
+}
+
+#menuBar
+{
+    -fx-pref-height : 25.0;
+    -fx-pref-width : 626.0;
+}
+
+#AnchorPane2
+{
+    -fx-pref-height : 200.0;
+    -fx-pref-width : 200.0;
+}
+
+#HBox
+{
+    -fx-pref-height : 320.0;
+    -fx-pref-width : 531.0;
+}
+
+#AnchorPane3
+{
+    -fx-max-width : 200.0;
+    -fx-min-width : 0.0;
+    -fx-pref-height : 320.0;
+    -fx-pref-width : 200.0;
+    -fx-background-color : #D6D6D6;
+}
+
+#ScrollPane
+{
+    -fx-pref-height : 200.0;
+    -fx-pref-width : 200.0;
+}
+
+#AnchorPane4
+{
+    -fx-max-width : 200.0;
+    -fx-min-height : 0.0;
+    -fx-min-width : 0.0;
+    -fx-pref-width : 200.0;
+}
+
+#TitlePane
+{
+    -fx-max-width : 200.0;
+    -fx-min-height : 0.0;
+    -fx-min-width : 0.0;
+    -fx-pref-width : 200.0;
+}
+
+#AnchorPane5
+{
+    -fx-max-width : 200.0;
+    -fx-min-height : 0.0;
+    -fx-min-width : 0.0;
+    -fx-pref-width : 200.0;
+}
+
+#VBox
+{
+    -fx-max-height : 90.0;
+    -fx-min-height : 0.0;
+    -fx-min-width : 0.0;
+}
+
+.ActionButton
+{
+    -fx-background-insets : 0.0 0.0 0.0 -10.0;
+    -fx-min-width : 200.0;
+}
+
+#buttonPut
+{
+    -fx-background-insets : -10.0 0.0 0.0 -10.0;
+}
+
+#AnchorPane6
+{
+    -fx-pref-height : 200.0;
+    -fx-pref-width : 200.0;
+}
+
+#SplitPane
+{
+    -fx-pref-height : 200.0;
+    -fx-pref-width : 160.0;
+}
+
+#scrollPaneImageView
+{
+    -fx-pref-height : 200.0;
+    -fx-pref-width : 200.0;
+}
+
+#imageView
+{
+    -fx-fit-height : 233.0;
+    -fx-fit-width : 447.0;
+}
+
+#AnchorPane7
+{
+    -fx-min-height : 0.0;
+    -fx-min-width : 0.0;
+    -fx-pref-height : 100.0;
+    -fx-pref-width : 160.0;
+}
+
+#textArea
+{
+   -fx-pref-height : 127.0;
+   -fx-pref-width : 379.0;
+}

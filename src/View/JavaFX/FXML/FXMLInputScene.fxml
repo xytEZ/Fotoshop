@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.JavaFX.Controller.FXMLInputSceneController">
+    <stylesheets>
+        <URL value="@fxmlinputscene.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="textField" layoutX="5.0" layoutY="28.0"/>
+      <Button fx:id="buttonSubmit" layoutX="158.0" layoutY="59.0" text="Submit" />
+      <Text id="text" layoutX="5.0" layoutY="19.0" text="Type a file name for get/put filter :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

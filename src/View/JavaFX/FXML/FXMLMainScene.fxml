@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.JavaFX.Controller.FXMLMainSceneController">
+    <stylesheets>
+        <URL value="@fxmlmainscene.css" />
+    </stylesheets>
+    <children>
+      <MenuBar id="menuBar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu text="File">
+               <items>
+                  <MenuItem fx:id="menuItemOpen" text="Open...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="menuItemSave" text="Save">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="menuItemScript" text="Script" />
+               </items>
+          </Menu>
+            <Menu text="Edit">
+              <items>
+                <MenuItem fx:id="menuItemUndo" text="Undo">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              </items>
+            </Menu>
+            <Menu text="Status">
+              <items>
+                  <MenuItem fx:id="menuItemLook" text="Look">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              </items>
+            </Menu>
+          <Menu text="Help">
+            <items>
+                <MenuItem fx:id="menuItemFotoshopHelp" text="Fotoshop Help">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F1" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                     </accelerator>
+                </MenuItem>
+              <MenuItem fx:id="menuItemAboutFotoshop" text="About Fotoshop" />
+            </items>
+          </Menu>
+            <Menu text="Animation">
+              <items>
+                  <Menu text="Scale transition">
+                    <items>
+                      <MenuItem fx:id="menuItemZoomIn" text="Zoom in" />
+                      <MenuItem fx:id="menuItemZoomOut" text="Zoom out" />
+                    </items>
+                  </Menu>
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane id="AnchorPane2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <HBox id="HBox" layoutY="41.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane id="AnchorPane3" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ScrollPane id="ScrollPane" hbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <content>
+                            <AnchorPane id="AnchorPane4">
+                                 <children>
+                                  <TitledPane id="TitlePane" animated="false" text="Action" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <content>
+                                      <AnchorPane id="AnchorPane5">
+                                             <children>
+                                                <VBox id="VBox" layoutX="2.5" layoutY="19.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Button fx:id="buttonPut" styleClass="ActionButton" text="Put">
+                                                      </Button>
+                                                      <Button fx:id="buttonGet" styleClass="ActionButton" text="Get">
+                                                      </Button>
+                                                      <Button fx:id="buttonRot90" styleClass="ActionButton" text="Rot90">
+                                                      </Button>
+                                                      <Button fx:id="buttonMono" styleClass="ActionButton" text="Mono">
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="AnchorPane6" HBox.hgrow="ALWAYS">
+                     <children>
+                        <SplitPane id="SplitPane" dividerPositions="0.6" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                              <ScrollPane fx:id="scrollPaneImageView">
+                                 <content>
+                                    <ImageView fx:id="imageView" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+                                 </content>
+                              </ScrollPane>
+                            <AnchorPane id="AnchorPane7">
+                                 <children>
+                                    <TextArea fx:id="textArea" editable="false" layoutY="33.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

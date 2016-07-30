@@ -1,0 +1,22 @@
+/* 
+    Created on : Dec 1, 2015, 4:24:17 AM
+    Author     : Fabien PHAM
+*/
+
+#AnchorPane
+{
+    -fx-pref-height : 98.0;
+    -fx-pref-width : 222.0;
+}
+
+#textField
+{
+    -fx-pref-height : 25.0;
+    -fx-pref-width : 207.0;
+}
+
+#text
+{
+    -fx-stroke-type : outside;
+    -fx-stroke-width : 0.0;
+}
